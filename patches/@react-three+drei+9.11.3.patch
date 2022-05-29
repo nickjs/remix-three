@@ -1,0 +1,1617 @@
+diff --git a/node_modules/@react-three/drei/core/AdaptiveDpr.js b/node_modules/@react-three/drei/core/AdaptiveDpr.js
+index f6a4033..9876fc1 100644
+--- a/node_modules/@react-three/drei/core/AdaptiveDpr.js
++++ b/node_modules/@react-three/drei/core/AdaptiveDpr.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { useThree } from '@react-three/fiber';
+ 
+ function AdaptiveDpr({
+diff --git a/node_modules/@react-three/drei/core/AdaptiveEvents.js b/node_modules/@react-three/drei/core/AdaptiveEvents.js
+index 2593a82..bdfc124 100644
+--- a/node_modules/@react-three/drei/core/AdaptiveEvents.js
++++ b/node_modules/@react-three/drei/core/AdaptiveEvents.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { useThree } from '@react-three/fiber';
+ 
+ function AdaptiveEvents() {
+diff --git a/node_modules/@react-three/drei/core/ArcballControls.d.ts b/node_modules/@react-three/drei/core/ArcballControls.d.ts
+index ca41d44..b634701 100644
+--- a/node_modules/@react-three/drei/core/ArcballControls.d.ts
++++ b/node_modules/@react-three/drei/core/ArcballControls.d.ts
+@@ -1,5 +1,5 @@
+ import { ReactThreeFiber } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import { ArcballControls as ArcballControlsImpl } from 'three-stdlib';
+ import type { Event, OrthographicCamera, PerspectiveCamera } from 'three';
+ export declare type ArcballControlsProps = Omit<ReactThreeFiber.Overwrite<ReactThreeFiber.Object3DNode<ArcballControlsImpl, typeof ArcballControlsImpl>, {
+diff --git a/node_modules/@react-three/drei/core/ArcballControls.js b/node_modules/@react-three/drei/core/ArcballControls.js
+index e171cad..bb8aab6 100644
+--- a/node_modules/@react-three/drei/core/ArcballControls.js
++++ b/node_modules/@react-three/drei/core/ArcballControls.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import { useThree, useFrame } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import { forwardRef, useMemo, useEffect } from 'react';
+ import { ArcballControls as ArcballControls$1 } from 'three-stdlib';
+ 
+diff --git a/node_modules/@react-three/drei/core/BBAnchor.js b/node_modules/@react-three/drei/core/BBAnchor.js
+index 1a7f11b..384450f 100644
+--- a/node_modules/@react-three/drei/core/BBAnchor.js
++++ b/node_modules/@react-three/drei/core/BBAnchor.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { useFrame } from '@react-three/fiber';
+ 
+diff --git a/node_modules/@react-three/drei/core/Backdrop.d.ts b/node_modules/@react-three/drei/core/Backdrop.d.ts
+index ebdb2d4..17f9330 100644
+--- a/node_modules/@react-three/drei/core/Backdrop.d.ts
++++ b/node_modules/@react-three/drei/core/Backdrop.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ export declare type BackdropProps = JSX.IntrinsicElements['group'] & {
+     floor?: number;
+     segments?: number;
+diff --git a/node_modules/@react-three/drei/core/Backdrop.js b/node_modules/@react-three/drei/core/Backdrop.js
+index 722d3ee..c970707 100644
+--- a/node_modules/@react-three/drei/core/Backdrop.js
++++ b/node_modules/@react-three/drei/core/Backdrop.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ 
+ const easeInExpo = x => x === 0 ? 0 : Math.pow(2, 10 * x - 10);
+ 
+diff --git a/node_modules/@react-three/drei/core/Billboard.d.ts b/node_modules/@react-three/drei/core/Billboard.d.ts
+index 57c489e..c77e7bc 100644
+--- a/node_modules/@react-three/drei/core/Billboard.d.ts
++++ b/node_modules/@react-three/drei/core/Billboard.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Group } from 'three';
+ export declare type BillboardProps = {
+     follow?: boolean;
+diff --git a/node_modules/@react-three/drei/core/Billboard.js b/node_modules/@react-three/drei/core/Billboard.js
+index 22dca6a..3a9b088 100644
+--- a/node_modules/@react-three/drei/core/Billboard.js
++++ b/node_modules/@react-three/drei/core/Billboard.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { useFrame } from '@react-three/fiber';
+ import mergeRefs from 'react-merge-refs';
+ 
+diff --git a/node_modules/@react-three/drei/core/Bounds.js b/node_modules/@react-three/drei/core/Bounds.js
+index 1b4791b..8cbc5c0 100644
+--- a/node_modules/@react-three/drei/core/Bounds.js
++++ b/node_modules/@react-three/drei/core/Bounds.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { useThree, useFrame } from '@react-three/fiber';
+ 
+diff --git a/node_modules/@react-three/drei/core/CameraShake.d.ts b/node_modules/@react-three/drei/core/CameraShake.d.ts
+index dc41c57..ef9f8db 100644
+--- a/node_modules/@react-three/drei/core/CameraShake.d.ts
++++ b/node_modules/@react-three/drei/core/CameraShake.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ export interface ShakeController {
+     getIntensity: () => number;
+     setIntensity: (val: number) => void;
+diff --git a/node_modules/@react-three/drei/core/CameraShake.js b/node_modules/@react-three/drei/core/CameraShake.js
+index a4bdb59..e92e11f 100644
+--- a/node_modules/@react-three/drei/core/CameraShake.js
++++ b/node_modules/@react-three/drei/core/CameraShake.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { useThree, useFrame } from '@react-three/fiber';
+ import { SimplexNoise } from 'three-stdlib';
+ 
+diff --git a/node_modules/@react-three/drei/core/Center.d.ts b/node_modules/@react-three/drei/core/Center.d.ts
+index 5748504..3e51964 100644
+--- a/node_modules/@react-three/drei/core/Center.d.ts
++++ b/node_modules/@react-three/drei/core/Center.d.ts
+@@ -1,5 +1,5 @@
+ import { Group } from 'three';
+-import * as React from 'react';
++import React from 'react';
+ declare type Props = JSX.IntrinsicElements['group'] & {
+     alignTop?: boolean;
+ };
+diff --git a/node_modules/@react-three/drei/core/Center.js b/node_modules/@react-three/drei/core/Center.js
+index 4267d0e..9eed35e 100644
+--- a/node_modules/@react-three/drei/core/Center.js
++++ b/node_modules/@react-three/drei/core/Center.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import { Box3, Vector3, Sphere } from 'three';
+-import * as React from 'react';
++import React from 'react';
+ 
+ const Center = /*#__PURE__*/React.forwardRef(function Center({
+   children,
+diff --git a/node_modules/@react-three/drei/core/Clone.d.ts b/node_modules/@react-three/drei/core/Clone.d.ts
+index da049e5..f5d65f4 100644
+--- a/node_modules/@react-three/drei/core/Clone.d.ts
++++ b/node_modules/@react-three/drei/core/Clone.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { MeshProps } from '@react-three/fiber';
+ export declare const Clone: React.ForwardRefExoticComponent<Pick<Omit<import("@react-three/fiber").GroupProps, "children"> & {
+     object: THREE.Object3D | THREE.Object3D[];
+diff --git a/node_modules/@react-three/drei/core/Clone.js b/node_modules/@react-three/drei/core/Clone.js
+index ee5f623..da3830a 100644
+--- a/node_modules/@react-three/drei/core/Clone.js
++++ b/node_modules/@react-three/drei/core/Clone.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import pick from 'lodash.pick';
+ 
+ function createSpread(child, {
+diff --git a/node_modules/@react-three/drei/core/Cloud.js b/node_modules/@react-three/drei/core/Cloud.js
+index 0e48115..ac8c4b7 100644
+--- a/node_modules/@react-three/drei/core/Cloud.js
++++ b/node_modules/@react-three/drei/core/Cloud.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { useThree, useFrame } from '@react-three/fiber';
+ import { Billboard } from './Billboard.js';
+ import { Plane } from './shapes.js';
+diff --git a/node_modules/@react-three/drei/core/ComputedAttribute.d.ts b/node_modules/@react-three/drei/core/ComputedAttribute.d.ts
+index 5511958..d08d2f0 100644
+--- a/node_modules/@react-three/drei/core/ComputedAttribute.d.ts
++++ b/node_modules/@react-three/drei/core/ComputedAttribute.d.ts
+@@ -1,5 +1,5 @@
+ import { BufferAttributeProps } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import { BufferAttribute, BufferGeometry } from 'three';
+ declare type Props = {
+     compute: (geometry: BufferGeometry) => BufferAttribute;
+diff --git a/node_modules/@react-three/drei/core/ComputedAttribute.js b/node_modules/@react-three/drei/core/ComputedAttribute.js
+index c4775fa..e362a04 100644
+--- a/node_modules/@react-three/drei/core/ComputedAttribute.js
++++ b/node_modules/@react-three/drei/core/ComputedAttribute.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { BufferAttribute } from 'three';
+ 
+ /**
+diff --git a/node_modules/@react-three/drei/core/ContactShadows.d.ts b/node_modules/@react-three/drei/core/ContactShadows.d.ts
+index 1f476ac..ff3dec7 100644
+--- a/node_modules/@react-three/drei/core/ContactShadows.d.ts
++++ b/node_modules/@react-three/drei/core/ContactShadows.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ export declare const ContactShadows: React.ForwardRefExoticComponent<Pick<Omit<import("@react-three/fiber").GroupProps, "scale"> & {
+     opacity?: number | undefined;
+diff --git a/node_modules/@react-three/drei/core/ContactShadows.js b/node_modules/@react-three/drei/core/ContactShadows.js
+index ef87f36..6401f53 100644
+--- a/node_modules/@react-three/drei/core/ContactShadows.js
++++ b/node_modules/@react-three/drei/core/ContactShadows.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { useThree, useFrame } from '@react-three/fiber';
+ import { HorizontalBlurShader, VerticalBlurShader } from 'three-stdlib';
+diff --git a/node_modules/@react-three/drei/core/CubeCamera.d.ts b/node_modules/@react-three/drei/core/CubeCamera.d.ts
+index 438a3c7..0334ed2 100644
+--- a/node_modules/@react-three/drei/core/CubeCamera.d.ts
++++ b/node_modules/@react-three/drei/core/CubeCamera.d.ts
+@@ -1,5 +1,5 @@
+ import { Fog, FogExp2, Texture } from 'three';
+-import * as React from 'react';
++import React from 'react';
+ declare type Props = JSX.IntrinsicElements['group'] & {
+     fog?: Fog | FogExp2;
+     frames?: number;
+diff --git a/node_modules/@react-three/drei/core/CubeCamera.js b/node_modules/@react-three/drei/core/CubeCamera.js
+index 2eb5c37..cd4dbde 100644
+--- a/node_modules/@react-three/drei/core/CubeCamera.js
++++ b/node_modules/@react-three/drei/core/CubeCamera.js
+@@ -1,5 +1,5 @@
+ import { WebGLCubeRenderTarget, HalfFloatType } from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import { useThree, useFrame } from '@react-three/fiber';
+ 
+ function CubeCamera({
+diff --git a/node_modules/@react-three/drei/core/CubicBezierLine.d.ts b/node_modules/@react-three/drei/core/CubicBezierLine.d.ts
+index 83f5615..c7f1f7f 100644
+--- a/node_modules/@react-three/drei/core/CubicBezierLine.d.ts
++++ b/node_modules/@react-three/drei/core/CubicBezierLine.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Vector3 } from 'three';
+ import { Line2 } from 'three/examples/jsm/lines/Line2';
+ import { LineProps } from './Line';
+diff --git a/node_modules/@react-three/drei/core/CubicBezierLine.js b/node_modules/@react-three/drei/core/CubicBezierLine.js
+index df96e7e..dc5f314 100644
+--- a/node_modules/@react-three/drei/core/CubicBezierLine.js
++++ b/node_modules/@react-three/drei/core/CubicBezierLine.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { Vector3, CubicBezierCurve3 } from 'three';
+ import { Line } from './Line.js';
+ 
+diff --git a/node_modules/@react-three/drei/core/CurveModifier.d.ts b/node_modules/@react-three/drei/core/CurveModifier.d.ts
+index 5acfcb4..d9306a9 100644
+--- a/node_modules/@react-three/drei/core/CurveModifier.d.ts
++++ b/node_modules/@react-three/drei/core/CurveModifier.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { Flow } from 'three-stdlib';
+ export interface CurveModifierProps {
+diff --git a/node_modules/@react-three/drei/core/CurveModifier.js b/node_modules/@react-three/drei/core/CurveModifier.js
+index da19a5c..268c29a 100644
+--- a/node_modules/@react-three/drei/core/CurveModifier.js
++++ b/node_modules/@react-three/drei/core/CurveModifier.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { createPortal } from '@react-three/fiber';
+ import { Flow } from 'three-stdlib';
+diff --git a/node_modules/@react-three/drei/core/Detailed.d.ts b/node_modules/@react-three/drei/core/Detailed.d.ts
+index b4bcc26..375eff8 100644
+--- a/node_modules/@react-three/drei/core/Detailed.d.ts
++++ b/node_modules/@react-three/drei/core/Detailed.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { LOD, Object3D } from 'three';
+ export declare const Detailed: React.ForwardRefExoticComponent<Pick<Omit<import("@react-three/fiber").ExtendedColors<import("@react-three/fiber").Overwrite<Partial<LOD>, import("@react-three/fiber").NodeProps<LOD, typeof LOD>>>, import("@react-three/fiber").NonFunctionKeys<{
+     position?: import("@react-three/fiber").Vector3 | undefined;
+diff --git a/node_modules/@react-three/drei/core/Detailed.js b/node_modules/@react-three/drei/core/Detailed.js
+index 9980d14..29f7930 100644
+--- a/node_modules/@react-three/drei/core/Detailed.js
++++ b/node_modules/@react-three/drei/core/Detailed.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { useFrame } from '@react-three/fiber';
+ import mergeRefs from 'react-merge-refs';
+ 
+diff --git a/node_modules/@react-three/drei/core/DeviceOrientationControls.d.ts b/node_modules/@react-three/drei/core/DeviceOrientationControls.d.ts
+index b67d5b0..9a0cbec 100644
+--- a/node_modules/@react-three/drei/core/DeviceOrientationControls.d.ts
++++ b/node_modules/@react-three/drei/core/DeviceOrientationControls.d.ts
+@@ -1,5 +1,5 @@
+ import { ReactThreeFiber } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { DeviceOrientationControls as DeviceOrientationControlsImp } from 'three-stdlib';
+ export declare type DeviceOrientationControlsProps = ReactThreeFiber.Object3DNode<DeviceOrientationControlsImp, typeof DeviceOrientationControlsImp> & {
+diff --git a/node_modules/@react-three/drei/core/DeviceOrientationControls.js b/node_modules/@react-three/drei/core/DeviceOrientationControls.js
+index 27b0852..bf02f6c 100644
+--- a/node_modules/@react-three/drei/core/DeviceOrientationControls.js
++++ b/node_modules/@react-three/drei/core/DeviceOrientationControls.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import { useThree, useFrame } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import { DeviceOrientationControls as DeviceOrientationControls$1 } from 'three-stdlib';
+ 
+ const DeviceOrientationControls = /*#__PURE__*/React.forwardRef((props, ref) => {
+diff --git a/node_modules/@react-three/drei/core/Edges.js b/node_modules/@react-three/drei/core/Edges.js
+index c56e027..947f68c 100644
+--- a/node_modules/@react-three/drei/core/Edges.js
++++ b/node_modules/@react-three/drei/core/Edges.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ 
+ function Edges({
+diff --git a/node_modules/@react-three/drei/core/Effects.d.ts b/node_modules/@react-three/drei/core/Effects.d.ts
+index 0580a86..c433759 100644
+--- a/node_modules/@react-three/drei/core/Effects.d.ts
++++ b/node_modules/@react-three/drei/core/Effects.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { WebGLRenderTarget } from 'three';
+ import { ReactThreeFiber } from '@react-three/fiber';
+ import { EffectComposer, RenderPass, ShaderPass } from 'three-stdlib';
+diff --git a/node_modules/@react-three/drei/core/Effects.js b/node_modules/@react-three/drei/core/Effects.js
+index c925771..97b27dc 100644
+--- a/node_modules/@react-three/drei/core/Effects.js
++++ b/node_modules/@react-three/drei/core/Effects.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { WebGLRenderTarget, HalfFloatType, RGBAFormat } from 'three';
+ import { extend, useThree, useFrame } from '@react-three/fiber';
+ import { EffectComposer, RenderPass, ShaderPass, GammaCorrectionShader } from 'three-stdlib';
+diff --git a/node_modules/@react-three/drei/core/Environment.d.ts b/node_modules/@react-three/drei/core/Environment.d.ts
+index d07449b..aab46f9 100644
+--- a/node_modules/@react-three/drei/core/Environment.d.ts
++++ b/node_modules/@react-three/drei/core/Environment.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Texture, Scene, Loader, CubeTexture } from 'three';
+ import { PresetsType } from '../helpers/environment-assets';
+ declare type Props = {
+diff --git a/node_modules/@react-three/drei/core/Environment.js b/node_modules/@react-three/drei/core/Environment.js
+index 7cba837..52ca4ba 100644
+--- a/node_modules/@react-three/drei/core/Environment.js
++++ b/node_modules/@react-three/drei/core/Environment.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { useThree, useLoader, useFrame, createPortal } from '@react-three/fiber';
+ import { CubeReflectionMapping, EquirectangularReflectionMapping, Scene, WebGLCubeRenderTarget, HalfFloatType, CubeTextureLoader, BackSide } from 'three';
+ import { RGBELoader } from 'three-stdlib';
+diff --git a/node_modules/@react-three/drei/core/FirstPersonControls.d.ts b/node_modules/@react-three/drei/core/FirstPersonControls.d.ts
+index 7f80c6e..a9e6319 100644
+--- a/node_modules/@react-three/drei/core/FirstPersonControls.d.ts
++++ b/node_modules/@react-three/drei/core/FirstPersonControls.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Object3DNode } from '@react-three/fiber';
+ import { FirstPersonControls as FirstPersonControlImpl } from 'three-stdlib';
+ export declare type FirstPersonControlsProps = Object3DNode<FirstPersonControlImpl, typeof FirstPersonControlImpl> & {
+diff --git a/node_modules/@react-three/drei/core/FirstPersonControls.js b/node_modules/@react-three/drei/core/FirstPersonControls.js
+index f8a2607..0b9d0aa 100644
+--- a/node_modules/@react-three/drei/core/FirstPersonControls.js
++++ b/node_modules/@react-three/drei/core/FirstPersonControls.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { useThree, useFrame } from '@react-three/fiber';
+ import { FirstPersonControls as FirstPersonControls$1 } from 'three-stdlib';
+ 
+diff --git a/node_modules/@react-three/drei/core/Float.d.ts b/node_modules/@react-three/drei/core/Float.d.ts
+index 50833e9..5f34299 100644
+--- a/node_modules/@react-three/drei/core/Float.d.ts
++++ b/node_modules/@react-three/drei/core/Float.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ export declare type FloatProps = JSX.IntrinsicElements['group'] & {
+     speed?: number;
+diff --git a/node_modules/@react-three/drei/core/Float.js b/node_modules/@react-three/drei/core/Float.js
+index 4d3e8ab..4c1b24b 100644
+--- a/node_modules/@react-three/drei/core/Float.js
++++ b/node_modules/@react-three/drei/core/Float.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { useFrame } from '@react-three/fiber';
+ import mergeRefs from 'react-merge-refs';
+ import * as THREE from 'three';
+diff --git a/node_modules/@react-three/drei/core/FlyControls.d.ts b/node_modules/@react-three/drei/core/FlyControls.d.ts
+index ccc4a4d..01c370b 100644
+--- a/node_modules/@react-three/drei/core/FlyControls.d.ts
++++ b/node_modules/@react-three/drei/core/FlyControls.d.ts
+@@ -1,5 +1,5 @@
+ import { ReactThreeFiber } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { FlyControls as FlyControlsImpl } from 'three-stdlib';
+ export declare type FlyControlsProps = ReactThreeFiber.Object3DNode<FlyControlsImpl, typeof FlyControlsImpl> & {
+diff --git a/node_modules/@react-three/drei/core/FlyControls.js b/node_modules/@react-three/drei/core/FlyControls.js
+index 24082a1..8fdb891 100644
+--- a/node_modules/@react-three/drei/core/FlyControls.js
++++ b/node_modules/@react-three/drei/core/FlyControls.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import { useThree, useFrame } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import { FlyControls as FlyControls$1 } from 'three-stdlib';
+ 
+ const FlyControls = /*#__PURE__*/React.forwardRef(({
+diff --git a/node_modules/@react-three/drei/core/GizmoHelper.js b/node_modules/@react-three/drei/core/GizmoHelper.js
+index 17b2911..0d16be8 100644
+--- a/node_modules/@react-three/drei/core/GizmoHelper.js
++++ b/node_modules/@react-three/drei/core/GizmoHelper.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { useThree, useFrame, createPortal } from '@react-three/fiber';
+ import { Object3D, Matrix4, Quaternion, Vector3, Scene } from 'three';
+ import { OrthographicCamera } from './OrthographicCamera.js';
+diff --git a/node_modules/@react-three/drei/core/GizmoViewcube.js b/node_modules/@react-three/drei/core/GizmoViewcube.js
+index 31fe106..ac94389 100644
+--- a/node_modules/@react-three/drei/core/GizmoViewcube.js
++++ b/node_modules/@react-three/drei/core/GizmoViewcube.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { useThree } from '@react-three/fiber';
+ import { useGizmoContext } from './GizmoHelper.js';
+ import { Vector3, CanvasTexture } from 'three';
+diff --git a/node_modules/@react-three/drei/core/GizmoViewport.js b/node_modules/@react-three/drei/core/GizmoViewport.js
+index 7b9846e..72464f4 100644
+--- a/node_modules/@react-three/drei/core/GizmoViewport.js
++++ b/node_modules/@react-three/drei/core/GizmoViewport.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { useThree } from '@react-three/fiber';
+ import { CanvasTexture } from 'three';
+ import { useGizmoContext } from './GizmoHelper.js';
+diff --git a/node_modules/@react-three/drei/core/GradientTexture.js b/node_modules/@react-three/drei/core/GradientTexture.js
+index 65fb8cf..017d4f5 100644
+--- a/node_modules/@react-three/drei/core/GradientTexture.js
++++ b/node_modules/@react-three/drei/core/GradientTexture.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import { useThree } from '@react-three/fiber';
+ 
+ function GradientTexture({
+diff --git a/node_modules/@react-three/drei/core/Image.d.ts b/node_modules/@react-three/drei/core/Image.d.ts
+index b52ea9a..3b14ffc 100644
+--- a/node_modules/@react-three/drei/core/Image.d.ts
++++ b/node_modules/@react-three/drei/core/Image.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { Color } from '@react-three/fiber';
+ export declare type ImageProps = JSX.IntrinsicElements['mesh'] & {
+diff --git a/node_modules/@react-three/drei/core/Image.js b/node_modules/@react-three/drei/core/Image.js
+index bf41a15..ec9d96f 100644
+--- a/node_modules/@react-three/drei/core/Image.js
++++ b/node_modules/@react-three/drei/core/Image.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { extend, useThree } from '@react-three/fiber';
+ import { shaderMaterial } from './shaderMaterial.js';
+diff --git a/node_modules/@react-three/drei/core/Instances.d.ts b/node_modules/@react-three/drei/core/Instances.d.ts
+index b42bdae..29341a8 100644
+--- a/node_modules/@react-three/drei/core/Instances.d.ts
++++ b/node_modules/@react-three/drei/core/Instances.d.ts
+@@ -1,5 +1,5 @@
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import { Position } from '../helpers/Position';
+ declare type Api = {
+     getParent: () => React.MutableRefObject<InstancedMesh>;
+diff --git a/node_modules/@react-three/drei/core/Instances.js b/node_modules/@react-three/drei/core/Instances.js
+index 145c64b..809030c 100644
+--- a/node_modules/@react-three/drei/core/Instances.js
++++ b/node_modules/@react-three/drei/core/Instances.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import { extend, useFrame } from '@react-three/fiber';
+ import mergeRefs from 'react-merge-refs';
+ import Composer from 'react-composer';
+diff --git a/node_modules/@react-three/drei/core/Lightformer.d.ts b/node_modules/@react-three/drei/core/Lightformer.d.ts
+index cd096d9..71ae7b0 100644
+--- a/node_modules/@react-three/drei/core/Lightformer.d.ts
++++ b/node_modules/@react-three/drei/core/Lightformer.d.ts
+@@ -1,5 +1,5 @@
+ import { ReactThreeFiber } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ export declare type LightProps = JSX.IntrinsicElements['mesh'] & {
+     args?: any[];
+diff --git a/node_modules/@react-three/drei/core/Lightformer.js b/node_modules/@react-three/drei/core/Lightformer.js
+index 2cd305c..8ae2639 100644
+--- a/node_modules/@react-three/drei/core/Lightformer.js
++++ b/node_modules/@react-three/drei/core/Lightformer.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import { applyProps } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import mergeRefs from 'react-merge-refs';
+ 
+diff --git a/node_modules/@react-three/drei/core/Line.d.ts b/node_modules/@react-three/drei/core/Line.d.ts
+index b91c580..f14885a 100644
+--- a/node_modules/@react-three/drei/core/Line.d.ts
++++ b/node_modules/@react-three/drei/core/Line.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Vector3, Color } from 'three';
+ import { ReactThreeFiber } from '@react-three/fiber';
+ import { LineMaterial, LineMaterialParameters, Line2 } from 'three-stdlib';
+diff --git a/node_modules/@react-three/drei/core/Line.js b/node_modules/@react-three/drei/core/Line.js
+index f450380..8f2cad4 100644
+--- a/node_modules/@react-three/drei/core/Line.js
++++ b/node_modules/@react-three/drei/core/Line.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { Vector2, Vector3, Color } from 'three';
+ import { Line2, LineMaterial, LineGeometry } from 'three-stdlib';
+ 
+diff --git a/node_modules/@react-three/drei/core/MapControls.d.ts b/node_modules/@react-three/drei/core/MapControls.d.ts
+index b513564..6ce18e7 100644
+--- a/node_modules/@react-three/drei/core/MapControls.d.ts
++++ b/node_modules/@react-three/drei/core/MapControls.d.ts
+@@ -1,5 +1,5 @@
+ import { ReactThreeFiber } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { MapControls as MapControlsImpl } from 'three-stdlib';
+ export declare type MapControlsProps = ReactThreeFiber.Overwrite<ReactThreeFiber.Object3DNode<MapControlsImpl, typeof MapControlsImpl>, {
+diff --git a/node_modules/@react-three/drei/core/MapControls.js b/node_modules/@react-three/drei/core/MapControls.js
+index 75a1983..6d709e0 100644
+--- a/node_modules/@react-three/drei/core/MapControls.js
++++ b/node_modules/@react-three/drei/core/MapControls.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import { useThree, useFrame } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import { MapControls as MapControls$1 } from 'three-stdlib';
+ 
+ const MapControls = /*#__PURE__*/React.forwardRef((props = {
+diff --git a/node_modules/@react-three/drei/core/Mask.d.ts b/node_modules/@react-three/drei/core/Mask.d.ts
+index 9f015a4..0b5ed8a 100644
+--- a/node_modules/@react-three/drei/core/Mask.d.ts
++++ b/node_modules/@react-three/drei/core/Mask.d.ts
+@@ -1,5 +1,5 @@
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ declare type MaskSpread = {
+     colorWrite: boolean;
+     depthWrite: boolean;
+diff --git a/node_modules/@react-three/drei/core/Mask.js b/node_modules/@react-three/drei/core/Mask.js
+index e51197f..971b211 100644
+--- a/node_modules/@react-three/drei/core/Mask.js
++++ b/node_modules/@react-three/drei/core/Mask.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ 
+ function Mask({
+   id = 1,
+diff --git a/node_modules/@react-three/drei/core/MeshDistortMaterial.d.ts b/node_modules/@react-three/drei/core/MeshDistortMaterial.d.ts
+index 697f65f..221fc0e 100644
+--- a/node_modules/@react-three/drei/core/MeshDistortMaterial.d.ts
++++ b/node_modules/@react-three/drei/core/MeshDistortMaterial.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { MeshPhysicalMaterial, MeshPhysicalMaterialParameters } from 'three';
+ declare type DistortMaterialType = JSX.IntrinsicElements['meshPhysicalMaterial'] & {
+     time?: number;
+diff --git a/node_modules/@react-three/drei/core/MeshDistortMaterial.js b/node_modules/@react-three/drei/core/MeshDistortMaterial.js
+index fee32c7..8493446 100644
+--- a/node_modules/@react-three/drei/core/MeshDistortMaterial.js
++++ b/node_modules/@react-three/drei/core/MeshDistortMaterial.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { MeshPhysicalMaterial } from 'three';
+ import { useFrame } from '@react-three/fiber';
+ import distort from '../helpers/glsl/distort.vert.glsl.js';
+diff --git a/node_modules/@react-three/drei/core/MeshReflectorMaterial.d.ts b/node_modules/@react-three/drei/core/MeshReflectorMaterial.d.ts
+index 179dec6..fabbcb6 100644
+--- a/node_modules/@react-three/drei/core/MeshReflectorMaterial.d.ts
++++ b/node_modules/@react-three/drei/core/MeshReflectorMaterial.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Texture } from 'three';
+ import { MeshReflectorMaterialProps, MeshReflectorMaterial as MeshReflectorMaterialImpl } from '../materials/MeshReflectorMaterial';
+ export declare type Props = JSX.IntrinsicElements['meshStandardMaterial'] & {
+diff --git a/node_modules/@react-three/drei/core/MeshReflectorMaterial.js b/node_modules/@react-three/drei/core/MeshReflectorMaterial.js
+index 689a4c9..f737438 100644
+--- a/node_modules/@react-three/drei/core/MeshReflectorMaterial.js
++++ b/node_modules/@react-three/drei/core/MeshReflectorMaterial.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { Plane, Vector3, Matrix4, Vector4, PerspectiveCamera, LinearFilter, HalfFloatType, WebGLRenderTarget, DepthTexture, DepthFormat, UnsignedShortType } from 'three';
+ import { extend, useThree, useFrame } from '@react-three/fiber';
+ import mergeRefs from 'react-merge-refs';
+diff --git a/node_modules/@react-three/drei/core/MeshWobbleMaterial.d.ts b/node_modules/@react-three/drei/core/MeshWobbleMaterial.d.ts
+index d464c3e..4ef7e5a 100644
+--- a/node_modules/@react-three/drei/core/MeshWobbleMaterial.d.ts
++++ b/node_modules/@react-three/drei/core/MeshWobbleMaterial.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { MeshStandardMaterial, MeshStandardMaterialParameters } from 'three';
+ declare type WobbleMaterialType = JSX.IntrinsicElements['meshStandardMaterial'] & {
+     time?: number;
+diff --git a/node_modules/@react-three/drei/core/MeshWobbleMaterial.js b/node_modules/@react-three/drei/core/MeshWobbleMaterial.js
+index 7951ce0..85e20c4 100644
+--- a/node_modules/@react-three/drei/core/MeshWobbleMaterial.js
++++ b/node_modules/@react-three/drei/core/MeshWobbleMaterial.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { MeshStandardMaterial } from 'three';
+ import { useFrame } from '@react-three/fiber';
+ 
+diff --git a/node_modules/@react-three/drei/core/OrbitControls.d.ts b/node_modules/@react-three/drei/core/OrbitControls.d.ts
+index 27b7a73..8cac09e 100644
+--- a/node_modules/@react-three/drei/core/OrbitControls.d.ts
++++ b/node_modules/@react-three/drei/core/OrbitControls.d.ts
+@@ -1,5 +1,5 @@
+ import { ReactThreeFiber } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import type { Camera, Event } from 'three';
+ import { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
+ export declare type OrbitControlsProps = Omit<ReactThreeFiber.Overwrite<ReactThreeFiber.Object3DNode<OrbitControlsImpl, typeof OrbitControlsImpl>, {
+diff --git a/node_modules/@react-three/drei/core/OrbitControls.js b/node_modules/@react-three/drei/core/OrbitControls.js
+index 8ae9860..0e22887 100644
+--- a/node_modules/@react-three/drei/core/OrbitControls.js
++++ b/node_modules/@react-three/drei/core/OrbitControls.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import { useThree, useFrame } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import { OrbitControls as OrbitControls$1 } from 'three-stdlib';
+ 
+ const OrbitControls = /*#__PURE__*/React.forwardRef(({
+diff --git a/node_modules/@react-three/drei/core/OrthographicCamera.d.ts b/node_modules/@react-three/drei/core/OrthographicCamera.d.ts
+index 9d24682..9b61edc 100644
+--- a/node_modules/@react-three/drei/core/OrthographicCamera.d.ts
++++ b/node_modules/@react-three/drei/core/OrthographicCamera.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { OrthographicCamera as OrthographicCameraImpl } from 'three';
+ export declare const OrthographicCamera: React.ForwardRefExoticComponent<Pick<Omit<import("@react-three/fiber").ExtendedColors<import("@react-three/fiber").Overwrite<Partial<OrthographicCameraImpl>, import("@react-three/fiber").NodeProps<OrthographicCameraImpl, typeof OrthographicCameraImpl>>>, import("@react-three/fiber").NonFunctionKeys<{
+     position?: import("@react-three/fiber").Vector3 | undefined;
+diff --git a/node_modules/@react-three/drei/core/OrthographicCamera.js b/node_modules/@react-three/drei/core/OrthographicCamera.js
+index 23e45f8..69d29bc 100644
+--- a/node_modules/@react-three/drei/core/OrthographicCamera.js
++++ b/node_modules/@react-three/drei/core/OrthographicCamera.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { useThree } from '@react-three/fiber';
+ import mergeRefs from 'react-merge-refs';
+ 
+diff --git a/node_modules/@react-three/drei/core/PerspectiveCamera.d.ts b/node_modules/@react-three/drei/core/PerspectiveCamera.d.ts
+index c0b0577..78f7464 100644
+--- a/node_modules/@react-three/drei/core/PerspectiveCamera.d.ts
++++ b/node_modules/@react-three/drei/core/PerspectiveCamera.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { PerspectiveCamera as PerspectiveCameraImpl } from 'three';
+ export declare const PerspectiveCamera: React.ForwardRefExoticComponent<Pick<Omit<import("@react-three/fiber").ExtendedColors<import("@react-three/fiber").Overwrite<Partial<PerspectiveCameraImpl>, import("@react-three/fiber").NodeProps<PerspectiveCameraImpl, typeof PerspectiveCameraImpl>>>, import("@react-three/fiber").NonFunctionKeys<{
+     position?: import("@react-three/fiber").Vector3 | undefined;
+diff --git a/node_modules/@react-three/drei/core/PerspectiveCamera.js b/node_modules/@react-three/drei/core/PerspectiveCamera.js
+index a0bf1ef..521ce1f 100644
+--- a/node_modules/@react-three/drei/core/PerspectiveCamera.js
++++ b/node_modules/@react-three/drei/core/PerspectiveCamera.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { useThree } from '@react-three/fiber';
+ import mergeRefs from 'react-merge-refs';
+ 
+diff --git a/node_modules/@react-three/drei/core/PointMaterial.d.ts b/node_modules/@react-three/drei/core/PointMaterial.d.ts
+index bdaa1cf..b5611db 100644
+--- a/node_modules/@react-three/drei/core/PointMaterial.d.ts
++++ b/node_modules/@react-three/drei/core/PointMaterial.d.ts
+@@ -1,5 +1,5 @@
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import { PrimitiveProps } from '@react-three/fiber';
+ declare type PointMaterialType = JSX.IntrinsicElements['pointsMaterial'];
+ declare global {
+diff --git a/node_modules/@react-three/drei/core/PointMaterial.js b/node_modules/@react-three/drei/core/PointMaterial.js
+index 3f3e0b6..d65ebbd 100644
+--- a/node_modules/@react-three/drei/core/PointMaterial.js
++++ b/node_modules/@react-three/drei/core/PointMaterial.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ 
+ class PointMaterialImpl extends THREE.PointsMaterial {
+   constructor(props) {
+diff --git a/node_modules/@react-three/drei/core/PointerLockControls.d.ts b/node_modules/@react-three/drei/core/PointerLockControls.d.ts
+index 3b1cf85..fb62b26 100644
+--- a/node_modules/@react-three/drei/core/PointerLockControls.d.ts
++++ b/node_modules/@react-three/drei/core/PointerLockControls.d.ts
+@@ -1,5 +1,5 @@
+ import { ReactThreeFiber } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { PointerLockControls as PointerLockControlsImpl } from 'three-stdlib';
+ export declare type PointerLockControlsProps = ReactThreeFiber.Object3DNode<PointerLockControlsImpl, typeof PointerLockControlsImpl> & {
+diff --git a/node_modules/@react-three/drei/core/PointerLockControls.js b/node_modules/@react-three/drei/core/PointerLockControls.js
+index 3fa8491..b60a290 100644
+--- a/node_modules/@react-three/drei/core/PointerLockControls.js
++++ b/node_modules/@react-three/drei/core/PointerLockControls.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import { useThree } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import { PointerLockControls as PointerLockControls$1 } from 'three-stdlib';
+ 
+ const PointerLockControls = /*#__PURE__*/React.forwardRef(({
+diff --git a/node_modules/@react-three/drei/core/Points.d.ts b/node_modules/@react-three/drei/core/Points.d.ts
+index 555256d..8e062bf 100644
+--- a/node_modules/@react-three/drei/core/Points.d.ts
++++ b/node_modules/@react-three/drei/core/Points.d.ts
+@@ -1,5 +1,5 @@
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ declare type PointsInstancesProps = JSX.IntrinsicElements['points'] & {
+     range?: number;
+     limit?: number;
+diff --git a/node_modules/@react-three/drei/core/Points.js b/node_modules/@react-three/drei/core/Points.js
+index 79e4a3e..d94fa62 100644
+--- a/node_modules/@react-three/drei/core/Points.js
++++ b/node_modules/@react-three/drei/core/Points.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import { extend, useFrame } from '@react-three/fiber';
+ import mergeRefs from 'react-merge-refs';
+ import { Position } from '../helpers/Position.js';
+diff --git a/node_modules/@react-three/drei/core/PositionalAudio.d.ts b/node_modules/@react-three/drei/core/PositionalAudio.d.ts
+index 6c98902..1095da5 100644
+--- a/node_modules/@react-three/drei/core/PositionalAudio.d.ts
++++ b/node_modules/@react-three/drei/core/PositionalAudio.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { PositionalAudio as PositionalAudioImpl } from 'three';
+ export declare const PositionalAudio: React.ForwardRefExoticComponent<Pick<Omit<import("@react-three/fiber").ExtendedColors<import("@react-three/fiber").Overwrite<Partial<PositionalAudioImpl>, import("@react-three/fiber").NodeProps<PositionalAudioImpl, typeof PositionalAudioImpl>>>, import("@react-three/fiber").NonFunctionKeys<{
+     position?: import("@react-three/fiber").Vector3 | undefined;
+diff --git a/node_modules/@react-three/drei/core/PositionalAudio.js b/node_modules/@react-three/drei/core/PositionalAudio.js
+index 3a11e85..eb4b7a7 100644
+--- a/node_modules/@react-three/drei/core/PositionalAudio.js
++++ b/node_modules/@react-three/drei/core/PositionalAudio.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { AudioListener, AudioLoader } from 'three';
+ import { useThree, useLoader } from '@react-three/fiber';
+ import mergeRefs from 'react-merge-refs';
+diff --git a/node_modules/@react-three/drei/core/Preload.js b/node_modules/@react-three/drei/core/Preload.js
+index 17daaf1..a2bfed8 100644
+--- a/node_modules/@react-three/drei/core/Preload.js
++++ b/node_modules/@react-three/drei/core/Preload.js
+@@ -1,5 +1,5 @@
+ import { WebGLCubeRenderTarget, CubeCamera } from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import { useThree } from '@react-three/fiber';
+ 
+ function Preload({
+diff --git a/node_modules/@react-three/drei/core/QuadraticBezierLine.d.ts b/node_modules/@react-three/drei/core/QuadraticBezierLine.d.ts
+index b76b29c..25fa20b 100644
+--- a/node_modules/@react-three/drei/core/QuadraticBezierLine.d.ts
++++ b/node_modules/@react-three/drei/core/QuadraticBezierLine.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Vector3 } from 'three';
+ import { Line2 } from 'three/examples/jsm/lines/Line2';
+ import { LineProps } from './Line';
+diff --git a/node_modules/@react-three/drei/core/QuadraticBezierLine.js b/node_modules/@react-three/drei/core/QuadraticBezierLine.js
+index 6ed9105..3223f97 100644
+--- a/node_modules/@react-three/drei/core/QuadraticBezierLine.js
++++ b/node_modules/@react-three/drei/core/QuadraticBezierLine.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { Vector3, QuadraticBezierCurve3 } from 'three';
+ import mergeRefs from 'react-merge-refs';
+ import { Line } from './Line.js';
+diff --git a/node_modules/@react-three/drei/core/Reflector.d.ts b/node_modules/@react-three/drei/core/Reflector.d.ts
+index 889de3e..305b36e 100644
+--- a/node_modules/@react-three/drei/core/Reflector.d.ts
++++ b/node_modules/@react-three/drei/core/Reflector.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Mesh, Texture } from 'three';
+ import { MeshReflectorMaterialProps } from '../materials/MeshReflectorMaterial';
+ export declare type ReflectorProps = Omit<JSX.IntrinsicElements['mesh'], 'args' | 'children'> & Pick<JSX.IntrinsicElements['planeBufferGeometry'], 'args'> & {
+diff --git a/node_modules/@react-three/drei/core/Reflector.js b/node_modules/@react-three/drei/core/Reflector.js
+index 2538286..937072f 100644
+--- a/node_modules/@react-three/drei/core/Reflector.js
++++ b/node_modules/@react-three/drei/core/Reflector.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { Plane, Vector3, Matrix4, Vector4, PerspectiveCamera, LinearFilter, WebGLRenderTarget, DepthTexture, DepthFormat, UnsignedShortType } from 'three';
+ import { extend, useThree, useFrame } from '@react-three/fiber';
+ import mergeRefs from 'react-merge-refs';
+diff --git a/node_modules/@react-three/drei/core/RenderTexture.d.ts b/node_modules/@react-three/drei/core/RenderTexture.d.ts
+index e8e22e7..b37f594 100644
+--- a/node_modules/@react-three/drei/core/RenderTexture.d.ts
++++ b/node_modules/@react-three/drei/core/RenderTexture.d.ts
+@@ -1,5 +1,5 @@
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ export declare const RenderTexture: React.ForwardRefExoticComponent<THREE.Texture & {
+     width?: number | undefined;
+     height?: number | undefined;
+diff --git a/node_modules/@react-three/drei/core/RenderTexture.js b/node_modules/@react-three/drei/core/RenderTexture.js
+index c045b85..f6fae20 100644
+--- a/node_modules/@react-three/drei/core/RenderTexture.js
++++ b/node_modules/@react-three/drei/core/RenderTexture.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import { useThree, createPortal, useFrame } from '@react-three/fiber';
+ import { useFBO } from './useFBO.js';
+ 
+diff --git a/node_modules/@react-three/drei/core/RoundedBox.d.ts b/node_modules/@react-three/drei/core/RoundedBox.d.ts
+index acf13b9..5ca7032 100644
+--- a/node_modules/@react-three/drei/core/RoundedBox.d.ts
++++ b/node_modules/@react-three/drei/core/RoundedBox.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Mesh } from 'three';
+ import { NamedArrayTuple } from '../helpers/ts-utils';
+ declare type Props = {
+diff --git a/node_modules/@react-three/drei/core/RoundedBox.js b/node_modules/@react-three/drei/core/RoundedBox.js
+index 3292a32..a9b1cdb 100644
+--- a/node_modules/@react-three/drei/core/RoundedBox.js
++++ b/node_modules/@react-three/drei/core/RoundedBox.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { Shape } from 'three';
+ 
+ const eps = 0.00001;
+diff --git a/node_modules/@react-three/drei/core/Sampler.d.ts b/node_modules/@react-three/drei/core/Sampler.d.ts
+index 7c3b98c..5909d4a 100644
+--- a/node_modules/@react-three/drei/core/Sampler.d.ts
++++ b/node_modules/@react-three/drei/core/Sampler.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Color, InstancedMesh, Mesh, Object3D, Vector3 } from 'three';
+ import { GroupProps } from '@react-three/fiber';
+ declare type SamplePayload = {
+diff --git a/node_modules/@react-three/drei/core/Sampler.js b/node_modules/@react-three/drei/core/Sampler.js
+index e366aa4..f227173 100644
+--- a/node_modules/@react-three/drei/core/Sampler.js
++++ b/node_modules/@react-three/drei/core/Sampler.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { MeshSurfaceSampler } from 'three-stdlib';
+ import { Vector3, Color, Object3D } from 'three';
+ 
+diff --git a/node_modules/@react-three/drei/core/ScreenQuad.d.ts b/node_modules/@react-three/drei/core/ScreenQuad.d.ts
+index 82ba6bd..56d595f 100644
+--- a/node_modules/@react-three/drei/core/ScreenQuad.d.ts
++++ b/node_modules/@react-three/drei/core/ScreenQuad.d.ts
+@@ -1,5 +1,5 @@
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ declare type Props = Omit<JSX.IntrinsicElements['mesh'], 'args'>;
+ export declare const ScreenQuad: React.ForwardRefExoticComponent<Pick<Props, "visible" | "attach" | "children" | "key" | "onUpdate" | "position" | "up" | "scale" | "rotation" | "matrix" | "quaternion" | "layers" | "dispose" | "type" | "id" | "uuid" | "name" | "parent" | "modelViewMatrix" | "normalMatrix" | "matrixWorld" | "matrixAutoUpdate" | "matrixWorldNeedsUpdate" | "castShadow" | "receiveShadow" | "frustumCulled" | "renderOrder" | "animations" | "userData" | "customDepthMaterial" | "customDistanceMaterial" | "isObject3D" | "onBeforeRender" | "onAfterRender" | "applyMatrix4" | "applyQuaternion" | "setRotationFromAxisAngle" | "setRotationFromEuler" | "setRotationFromMatrix" | "setRotationFromQuaternion" | "rotateOnAxis" | "rotateOnWorldAxis" | "rotateX" | "rotateY" | "rotateZ" | "translateOnAxis" | "translateX" | "translateY" | "translateZ" | "localToWorld" | "worldToLocal" | "lookAt" | "add" | "remove" | "removeFromParent" | "clear" | "getObjectById" | "getObjectByName" | "getObjectByProperty" | "getWorldPosition" | "getWorldQuaternion" | "getWorldScale" | "getWorldDirection" | "raycast" | "traverse" | "traverseVisible" | "traverseAncestors" | "updateMatrix" | "updateMatrixWorld" | "updateWorldMatrix" | "toJSON" | "clone" | "copy" | "addEventListener" | "hasEventListener" | "removeEventListener" | "dispatchEvent" | keyof import("@react-three/fiber/dist/declarations/src/core/events").EventHandlers | "material" | "geometry" | "morphTargetInfluences" | "morphTargetDictionary" | "isMesh" | "updateMorphTargets"> & React.RefAttributes<THREE.Mesh<THREE.BufferGeometry, THREE.Material | THREE.Material[]>>>;
+ export {};
+diff --git a/node_modules/@react-three/drei/core/ScreenQuad.js b/node_modules/@react-three/drei/core/ScreenQuad.js
+index 626c928..1828372 100644
+--- a/node_modules/@react-three/drei/core/ScreenQuad.js
++++ b/node_modules/@react-three/drei/core/ScreenQuad.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ 
+ function createScreenQuadGeometry() {
+   const geometry = new THREE.BufferGeometry();
+diff --git a/node_modules/@react-three/drei/core/Segments.d.ts b/node_modules/@react-three/drei/core/Segments.d.ts
+index 42763b3..25af12a 100644
+--- a/node_modules/@react-three/drei/core/Segments.d.ts
++++ b/node_modules/@react-three/drei/core/Segments.d.ts
+@@ -1,5 +1,5 @@
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import { ReactThreeFiber } from '@react-three/fiber';
+ import { Line2 } from 'three-stdlib';
+ declare type SegmentsProps = {
+diff --git a/node_modules/@react-three/drei/core/Segments.js b/node_modules/@react-three/drei/core/Segments.js
+index 02aa660..6f9d593 100644
+--- a/node_modules/@react-three/drei/core/Segments.js
++++ b/node_modules/@react-three/drei/core/Segments.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import mergeRefs from 'react-merge-refs';
+ import { extend, useFrame } from '@react-three/fiber';
+ import { Line2, LineMaterial, LineSegmentsGeometry } from 'three-stdlib';
+diff --git a/node_modules/@react-three/drei/core/Shadow.d.ts b/node_modules/@react-three/drei/core/Shadow.d.ts
+index f49b0cc..6247e96 100644
+--- a/node_modules/@react-three/drei/core/Shadow.d.ts
++++ b/node_modules/@react-three/drei/core/Shadow.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Mesh, Color } from 'three';
+ export declare const Shadow: React.ForwardRefExoticComponent<Pick<Omit<import("@react-three/fiber").ExtendedColors<import("@react-three/fiber").Overwrite<Partial<Mesh<import("three").BufferGeometry, import("three").Material | import("three").Material[]>>, import("@react-three/fiber").NodeProps<Mesh<import("three").BufferGeometry, import("three").Material | import("three").Material[]>, typeof Mesh>>>, import("@react-three/fiber").NonFunctionKeys<{
+     position?: import("@react-three/fiber").Vector3 | undefined;
+diff --git a/node_modules/@react-three/drei/core/Shadow.js b/node_modules/@react-three/drei/core/Shadow.js
+index b778fc1..36eec29 100644
+--- a/node_modules/@react-three/drei/core/Shadow.js
++++ b/node_modules/@react-three/drei/core/Shadow.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { Color, DoubleSide } from 'three';
+ 
+ const Shadow = /*#__PURE__*/React.forwardRef(({
+diff --git a/node_modules/@react-three/drei/core/Sky.d.ts b/node_modules/@react-three/drei/core/Sky.d.ts
+index 7e3c080..345fffa 100644
+--- a/node_modules/@react-three/drei/core/Sky.d.ts
++++ b/node_modules/@react-three/drei/core/Sky.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { ReactThreeFiber } from '@react-three/fiber';
+ import { Vector3 } from 'three';
+ declare type Props = {
+diff --git a/node_modules/@react-three/drei/core/Sky.js b/node_modules/@react-three/drei/core/Sky.js
+index fb36a5f..5514ee4 100644
+--- a/node_modules/@react-three/drei/core/Sky.js
++++ b/node_modules/@react-three/drei/core/Sky.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { Sky as Sky$1 } from 'three-stdlib';
+ import { Vector3 } from 'three';
+ 
+diff --git a/node_modules/@react-three/drei/core/Sparkles.d.ts b/node_modules/@react-three/drei/core/Sparkles.d.ts
+index c13df28..dacbd81 100644
+--- a/node_modules/@react-three/drei/core/Sparkles.d.ts
++++ b/node_modules/@react-three/drei/core/Sparkles.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { Node } from '@react-three/fiber';
+ interface Props {
+diff --git a/node_modules/@react-three/drei/core/Sparkles.js b/node_modules/@react-three/drei/core/Sparkles.js
+index d1bd7c2..17af0a2 100644
+--- a/node_modules/@react-three/drei/core/Sparkles.js
++++ b/node_modules/@react-three/drei/core/Sparkles.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { extend, useThree, useFrame } from '@react-three/fiber';
+ import fragShader from '../helpers/glsl/Sparkles.frag.glsl.js';
+diff --git a/node_modules/@react-three/drei/core/SpotLight.d.ts b/node_modules/@react-three/drei/core/SpotLight.d.ts
+index a77423b..b4f1db3 100644
+--- a/node_modules/@react-three/drei/core/SpotLight.d.ts
++++ b/node_modules/@react-three/drei/core/SpotLight.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { DepthTexture, SpotLight as SpotLightImpl } from 'three';
+ declare const SpotLight: React.ForwardRefExoticComponent<Pick<Omit<import("@react-three/fiber").ExtendedColors<import("@react-three/fiber").Overwrite<Partial<SpotLightImpl>, import("@react-three/fiber").NodeProps<SpotLightImpl, typeof SpotLightImpl>>>, import("@react-three/fiber").NonFunctionKeys<{
+     position?: import("@react-three/fiber").Vector3 | undefined;
+diff --git a/node_modules/@react-three/drei/core/SpotLight.js b/node_modules/@react-three/drei/core/SpotLight.js
+index d11b473..8cb139d 100644
+--- a/node_modules/@react-three/drei/core/SpotLight.js
++++ b/node_modules/@react-three/drei/core/SpotLight.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { Vector3, CylinderGeometry, Matrix4 } from 'three';
+ import { useThree, useFrame } from '@react-three/fiber';
+ import { SpotLightMaterial } from '../materials/SpotLightMaterial.js';
+diff --git a/node_modules/@react-three/drei/core/Stage.d.ts b/node_modules/@react-three/drei/core/Stage.d.ts
+index 5a873ce..7a7205f 100644
+--- a/node_modules/@react-three/drei/core/Stage.d.ts
++++ b/node_modules/@react-three/drei/core/Stage.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { PresetsType } from '../helpers/environment-assets';
+ declare const presets: {
+diff --git a/node_modules/@react-three/drei/core/Stage.js b/node_modules/@react-three/drei/core/Stage.js
+index e78a101..7108f45 100644
+--- a/node_modules/@react-three/drei/core/Stage.js
++++ b/node_modules/@react-three/drei/core/Stage.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { useThree } from '@react-three/fiber';
+ import { Environment } from './Environment.js';
+diff --git a/node_modules/@react-three/drei/core/Stars.d.ts b/node_modules/@react-three/drei/core/Stars.d.ts
+index 23580b2..2d62e07 100644
+--- a/node_modules/@react-three/drei/core/Stars.d.ts
++++ b/node_modules/@react-three/drei/core/Stars.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { ReactThreeFiber } from '@react-three/fiber';
+ import { ShaderMaterial } from 'three';
+ declare type Props = {
+diff --git a/node_modules/@react-three/drei/core/Stars.js b/node_modules/@react-three/drei/core/Stars.js
+index 9b0bfbe..08f3cdc 100644
+--- a/node_modules/@react-three/drei/core/Stars.js
++++ b/node_modules/@react-three/drei/core/Stars.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { useFrame } from '@react-three/fiber';
+ import { Color, Vector3, Spherical, AdditiveBlending, ShaderMaterial } from 'three';
+ 
+diff --git a/node_modules/@react-three/drei/core/Stats.d.ts b/node_modules/@react-three/drei/core/Stats.d.ts
+index df4bb53..fb8db39 100644
+--- a/node_modules/@react-three/drei/core/Stats.d.ts
++++ b/node_modules/@react-three/drei/core/Stats.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ declare type Props = {
+     showPanel?: number;
+     className?: string;
+diff --git a/node_modules/@react-three/drei/core/Stats.js b/node_modules/@react-three/drei/core/Stats.js
+index 4fb674e..ed497e3 100644
+--- a/node_modules/@react-three/drei/core/Stats.js
++++ b/node_modules/@react-three/drei/core/Stats.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { addEffect, addAfterEffect } from '@react-three/fiber';
+ import StatsImpl from 'stats.js';
+ import { useEffectfulState } from '../helpers/useEffectfulState.js';
+diff --git a/node_modules/@react-three/drei/core/Text.d.ts b/node_modules/@react-three/drei/core/Text.d.ts
+index 0851fc2..9904a6b 100644
+--- a/node_modules/@react-three/drei/core/Text.d.ts
++++ b/node_modules/@react-three/drei/core/Text.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { ReactThreeFiber } from '@react-three/fiber';
+ export declare const Text: React.ForwardRefExoticComponent<Pick<Omit<ReactThreeFiber.ExtendedColors<ReactThreeFiber.Overwrite<Partial<import("three").Mesh<import("three").BufferGeometry, import("three").Material | import("three").Material[]>>, ReactThreeFiber.NodeProps<import("three").Mesh<import("three").BufferGeometry, import("three").Material | import("three").Material[]>, typeof import("three").Mesh>>>, ReactThreeFiber.NonFunctionKeys<{
+     position?: ReactThreeFiber.Vector3 | undefined;
+diff --git a/node_modules/@react-three/drei/core/Text.js b/node_modules/@react-three/drei/core/Text.js
+index ffba865..a8a2abb 100644
+--- a/node_modules/@react-three/drei/core/Text.js
++++ b/node_modules/@react-three/drei/core/Text.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { Text as Text$1, preloadFont } from 'troika-three-text';
+ import { useThree } from '@react-three/fiber';
+ import { suspend } from 'suspend-react';
+diff --git a/node_modules/@react-three/drei/core/Text3D.d.ts b/node_modules/@react-three/drei/core/Text3D.d.ts
+index a4328ab..a2681b3 100644
+--- a/node_modules/@react-three/drei/core/Text3D.d.ts
++++ b/node_modules/@react-three/drei/core/Text3D.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { MeshProps, Node } from '@react-three/fiber';
+ import { TextGeometryParameters } from 'three-stdlib';
+diff --git a/node_modules/@react-three/drei/core/Text3D.js b/node_modules/@react-three/drei/core/Text3D.js
+index 5fb6bda..c626b12 100644
+--- a/node_modules/@react-three/drei/core/Text3D.js
++++ b/node_modules/@react-three/drei/core/Text3D.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { useMemo } from 'react';
+ import { extend } from '@react-three/fiber';
+ import { suspend } from 'suspend-react';
+diff --git a/node_modules/@react-three/drei/core/TrackballControls.d.ts b/node_modules/@react-three/drei/core/TrackballControls.d.ts
+index 6f911b3..20e418c 100644
+--- a/node_modules/@react-three/drei/core/TrackballControls.d.ts
++++ b/node_modules/@react-three/drei/core/TrackballControls.d.ts
+@@ -1,5 +1,5 @@
+ import { ReactThreeFiber } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { TrackballControls as TrackballControlsImpl } from 'three-stdlib';
+ export declare type TrackballControlsProps = ReactThreeFiber.Overwrite<ReactThreeFiber.Object3DNode<TrackballControlsImpl, typeof TrackballControlsImpl>, {
+diff --git a/node_modules/@react-three/drei/core/TrackballControls.js b/node_modules/@react-three/drei/core/TrackballControls.js
+index 945c936..f3d1e0b 100644
+--- a/node_modules/@react-three/drei/core/TrackballControls.js
++++ b/node_modules/@react-three/drei/core/TrackballControls.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import { useThree, useFrame } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import { TrackballControls as TrackballControls$1 } from 'three-stdlib';
+ 
+ const TrackballControls = /*#__PURE__*/React.forwardRef(({
+diff --git a/node_modules/@react-three/drei/core/Trail.d.ts b/node_modules/@react-three/drei/core/Trail.d.ts
+index 207e028..1918a88 100644
+--- a/node_modules/@react-three/drei/core/Trail.d.ts
++++ b/node_modules/@react-three/drei/core/Trail.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { ColorRepresentation, Object3D } from 'three';
+ import { MeshLine as MeshLineImpl } from 'meshline';
+ declare type Settings = {
+diff --git a/node_modules/@react-three/drei/core/Trail.js b/node_modules/@react-three/drei/core/Trail.js
+index 493728b..e223fd9 100644
+--- a/node_modules/@react-three/drei/core/Trail.js
++++ b/node_modules/@react-three/drei/core/Trail.js
+@@ -1,5 +1,5 @@
+ import { useFrame, useThree } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import { Vector3, Object3D, Vector2 } from 'three';
+ import { MeshLine, MeshLineMaterial } from 'meshline';
+ 
+diff --git a/node_modules/@react-three/drei/core/TransformControls.d.ts b/node_modules/@react-three/drei/core/TransformControls.d.ts
+index 01ea3c6..bfb19d0 100644
+--- a/node_modules/@react-three/drei/core/TransformControls.d.ts
++++ b/node_modules/@react-three/drei/core/TransformControls.d.ts
+@@ -1,5 +1,5 @@
+ import { ReactThreeFiber } from '@react-three/fiber';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { TransformControls as TransformControlsImpl } from 'three-stdlib';
+ export declare type TransformControlsProps = ReactThreeFiber.Object3DNode<TransformControlsImpl, typeof TransformControlsImpl> & JSX.IntrinsicElements['group'] & {
+diff --git a/node_modules/@react-three/drei/core/TransformControls.js b/node_modules/@react-three/drei/core/TransformControls.js
+index 23a79f2..e800de2 100644
+--- a/node_modules/@react-three/drei/core/TransformControls.js
++++ b/node_modules/@react-three/drei/core/TransformControls.js
+@@ -2,7 +2,7 @@ import _extends from '@babel/runtime/helpers/esm/extends';
+ import { useThree } from '@react-three/fiber';
+ import omit from 'lodash.omit';
+ import pick from 'lodash.pick';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { TransformControls as TransformControls$1 } from 'three-stdlib';
+ 
+diff --git a/node_modules/@react-three/drei/core/shapes.d.ts b/node_modules/@react-three/drei/core/shapes.d.ts
+index cec8a01..4f95a96 100644
+--- a/node_modules/@react-three/drei/core/shapes.d.ts
++++ b/node_modules/@react-three/drei/core/shapes.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ export declare type Args<T> = T extends new (...args: any) => any ? ConstructorParameters<T> : T;
+ export declare type ShapeProps<T> = Omit<JSX.IntrinsicElements['mesh'], 'args'> & {
+     args?: Args<T>;
+diff --git a/node_modules/@react-three/drei/core/shapes.js b/node_modules/@react-three/drei/core/shapes.js
+index 3718189..4ebd079 100644
+--- a/node_modules/@react-three/drei/core/shapes.js
++++ b/node_modules/@react-three/drei/core/shapes.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ 
+ function create(type) {
+   const El = type + 'BufferGeometry';
+diff --git a/node_modules/@react-three/drei/core/useAnimations.d.ts b/node_modules/@react-three/drei/core/useAnimations.d.ts
+index 409df19..ad490c0 100644
+--- a/node_modules/@react-three/drei/core/useAnimations.d.ts
++++ b/node_modules/@react-three/drei/core/useAnimations.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Object3D, AnimationClip, AnimationAction, AnimationMixer } from 'three';
+ declare type Api<T extends AnimationClip> = {
+     ref: React.MutableRefObject<Object3D | undefined | null>;
+diff --git a/node_modules/@react-three/drei/core/useAnimations.js b/node_modules/@react-three/drei/core/useAnimations.js
+index a05e183..da2d61e 100644
+--- a/node_modules/@react-three/drei/core/useAnimations.js
++++ b/node_modules/@react-three/drei/core/useAnimations.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Object3D, AnimationMixer } from 'three';
+ import { useFrame } from '@react-three/fiber';
+ 
+diff --git a/node_modules/@react-three/drei/core/useBVH.d.ts b/node_modules/@react-three/drei/core/useBVH.d.ts
+index 81b0b16..20a68eb 100644
+--- a/node_modules/@react-three/drei/core/useBVH.d.ts
++++ b/node_modules/@react-three/drei/core/useBVH.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Mesh } from 'three';
+ export interface BVHOptions {
+     splitStrategy?: 'CENTER' | 'AVERAGE' | 'SAH';
+diff --git a/node_modules/@react-three/drei/core/useBVH.js b/node_modules/@react-three/drei/core/useBVH.js
+index e796ac5..cb004bf 100644
+--- a/node_modules/@react-three/drei/core/useBVH.js
++++ b/node_modules/@react-three/drei/core/useBVH.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { acceleratedRaycast, computeBoundsTree, disposeBoundsTree } from 'three-mesh-bvh';
+ 
+ function useBVH(mesh, options) {
+diff --git a/node_modules/@react-three/drei/core/useBoxProjectedEnv.d.ts b/node_modules/@react-three/drei/core/useBoxProjectedEnv.d.ts
+index a3ef17c..b698eb7 100644
+--- a/node_modules/@react-three/drei/core/useBoxProjectedEnv.d.ts
++++ b/node_modules/@react-three/drei/core/useBoxProjectedEnv.d.ts
+@@ -1,5 +1,5 @@
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import { ReactThreeFiber } from '@react-three/fiber';
+ export declare function useBoxProjectedEnv(position?: ReactThreeFiber.Vector3, size?: ReactThreeFiber.Vector3): {
+     ref: React.MutableRefObject<THREE.Material>;
+diff --git a/node_modules/@react-three/drei/core/useBoxProjectedEnv.js b/node_modules/@react-three/drei/core/useBoxProjectedEnv.js
+index e624aca..b88af39 100644
+--- a/node_modules/@react-three/drei/core/useBoxProjectedEnv.js
++++ b/node_modules/@react-three/drei/core/useBoxProjectedEnv.js
+@@ -1,5 +1,5 @@
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import { applyProps } from '@react-three/fiber';
+ 
+ // and @0beqz https://gist.github.com/0beqz/8d51b4ae16d68021a09fb504af708fca
+diff --git a/node_modules/@react-three/drei/core/useCamera.d.ts b/node_modules/@react-three/drei/core/useCamera.d.ts
+index 2bf959b..faf1779 100644
+--- a/node_modules/@react-three/drei/core/useCamera.d.ts
++++ b/node_modules/@react-three/drei/core/useCamera.d.ts
+@@ -1,3 +1,3 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Raycaster, Camera, Intersection } from 'three';
+ export declare function useCamera(camera: Camera | React.MutableRefObject<Camera>, props?: Partial<Raycaster>): (_: Raycaster, intersects: Intersection[]) => void;
+diff --git a/node_modules/@react-three/drei/core/useCamera.js b/node_modules/@react-three/drei/core/useCamera.js
+index 734d7dc..a17ee86 100644
+--- a/node_modules/@react-three/drei/core/useCamera.js
++++ b/node_modules/@react-three/drei/core/useCamera.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Raycaster, Camera } from 'three';
+ import { useThree, applyProps } from '@react-three/fiber';
+ 
+diff --git a/node_modules/@react-three/drei/core/useContextBridge.d.ts b/node_modules/@react-three/drei/core/useContextBridge.d.ts
+index ef9ad1f..6168cf0 100644
+--- a/node_modules/@react-three/drei/core/useContextBridge.d.ts
++++ b/node_modules/@react-three/drei/core/useContextBridge.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ export declare function useContextBridge(...contexts: Array<React.Context<any>>): ({ children }: {
+     children: React.ReactNode;
+ }) => JSX.Element;
+diff --git a/node_modules/@react-three/drei/core/useContextBridge.js b/node_modules/@react-three/drei/core/useContextBridge.js
+index fc67022..daabf25 100644
+--- a/node_modules/@react-three/drei/core/useContextBridge.js
++++ b/node_modules/@react-three/drei/core/useContextBridge.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ 
+ /* eslint-disable react-hooks/rules-of-hooks */
+ function useContextBridge(...contexts) {
+diff --git a/node_modules/@react-three/drei/core/useDepthBuffer.js b/node_modules/@react-three/drei/core/useDepthBuffer.js
+index f34754d..6a055dc 100644
+--- a/node_modules/@react-three/drei/core/useDepthBuffer.js
++++ b/node_modules/@react-three/drei/core/useDepthBuffer.js
+@@ -1,5 +1,5 @@
+ import { DepthTexture, DepthFormat, UnsignedShortType } from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import { useThree, useFrame } from '@react-three/fiber';
+ import { useFBO } from './useFBO.js';
+ 
+diff --git a/node_modules/@react-three/drei/core/useFBO.js b/node_modules/@react-three/drei/core/useFBO.js
+index 9242616..c26c94d 100644
+--- a/node_modules/@react-three/drei/core/useFBO.js
++++ b/node_modules/@react-three/drei/core/useFBO.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { useThree } from '@react-three/fiber';
+ 
+diff --git a/node_modules/@react-three/drei/core/useHelper.d.ts b/node_modules/@react-three/drei/core/useHelper.d.ts
+index 3710c43..6cb82db 100644
+--- a/node_modules/@react-three/drei/core/useHelper.d.ts
++++ b/node_modules/@react-three/drei/core/useHelper.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Object3D } from 'three';
+ import { Falsey } from 'utility-types';
+ declare type Helper = Object3D & {
+diff --git a/node_modules/@react-three/drei/core/useHelper.js b/node_modules/@react-three/drei/core/useHelper.js
+index fcfd5a1..862f3b9 100644
+--- a/node_modules/@react-three/drei/core/useHelper.js
++++ b/node_modules/@react-three/drei/core/useHelper.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { useThree, useFrame } from '@react-three/fiber';
+ 
+ function useHelper(object3D, helperConstructor, ...args) {
+diff --git a/node_modules/@react-three/drei/core/useIntersect.d.ts b/node_modules/@react-three/drei/core/useIntersect.d.ts
+index 4b99631..2ad38aa 100644
+--- a/node_modules/@react-three/drei/core/useIntersect.d.ts
++++ b/node_modules/@react-three/drei/core/useIntersect.d.ts
+@@ -1,2 +1,2 @@
+-import * as React from 'react';
++import React from 'react';
+ export declare function useIntersect<T extends THREE.Object3D>(onChange: (visible: boolean) => void): React.MutableRefObject<T>;
+diff --git a/node_modules/@react-three/drei/core/useIntersect.js b/node_modules/@react-three/drei/core/useIntersect.js
+index beaae81..e296c7c 100644
+--- a/node_modules/@react-three/drei/core/useIntersect.js
++++ b/node_modules/@react-three/drei/core/useIntersect.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { addEffect, addAfterEffect } from '@react-three/fiber';
+ 
+ function useIntersect(onChange) {
+diff --git a/node_modules/@react-three/drei/core/useMatcapTexture.js b/node_modules/@react-three/drei/core/useMatcapTexture.js
+index 4881036..3a3235f 100644
+--- a/node_modules/@react-three/drei/core/useMatcapTexture.js
++++ b/node_modules/@react-three/drei/core/useMatcapTexture.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { useTexture } from './useTexture.js';
+ import { suspend } from 'suspend-react';
+ 
+diff --git a/node_modules/@react-three/drei/core/useNormalTexture.js b/node_modules/@react-three/drei/core/useNormalTexture.js
+index 9730752..90c63ce 100644
+--- a/node_modules/@react-three/drei/core/useNormalTexture.js
++++ b/node_modules/@react-three/drei/core/useNormalTexture.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { useTexture } from './useTexture.js';
+ import { RepeatWrapping, Vector2 } from 'three';
+ import { suspend } from 'suspend-react';
+diff --git a/node_modules/@react-three/drei/helpers/useEffectfulState.d.ts b/node_modules/@react-three/drei/helpers/useEffectfulState.d.ts
+index 6a68c1b..46802ca 100644
+--- a/node_modules/@react-three/drei/helpers/useEffectfulState.d.ts
++++ b/node_modules/@react-three/drei/helpers/useEffectfulState.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ declare type RefType<T> = React.MutableRefObject<T> | ((state: T) => void);
+ export declare function useEffectfulState<T>(fn: () => T, deps?: React.DependencyList, cb?: RefType<T>): T | undefined;
+ export {};
+diff --git a/node_modules/@react-three/drei/helpers/useEffectfulState.js b/node_modules/@react-three/drei/helpers/useEffectfulState.js
+index 43d92ed..d914f78 100644
+--- a/node_modules/@react-three/drei/helpers/useEffectfulState.js
++++ b/node_modules/@react-three/drei/helpers/useEffectfulState.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ 
+ function call(ref, value) {
+   if (typeof ref === 'function') ref(value);else if (ref != null) ref.current = value;
+diff --git a/node_modules/@react-three/drei/web/CycleRaycast.d.ts b/node_modules/@react-three/drei/web/CycleRaycast.d.ts
+index a3a3877..eb25eb7 100644
+--- a/node_modules/@react-three/drei/web/CycleRaycast.d.ts
++++ b/node_modules/@react-three/drei/web/CycleRaycast.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ export declare type CycleRaycastProps = {
+     onChanged?: (hits: THREE.Intersection[], cycle: number) => null;
+diff --git a/node_modules/@react-three/drei/web/CycleRaycast.js b/node_modules/@react-three/drei/web/CycleRaycast.js
+index e538129..e20f9d7 100644
+--- a/node_modules/@react-three/drei/web/CycleRaycast.js
++++ b/node_modules/@react-three/drei/web/CycleRaycast.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { useThree } from '@react-three/fiber';
+ 
+ function CycleRaycast({
+diff --git a/node_modules/@react-three/drei/web/Html.d.ts b/node_modules/@react-three/drei/web/Html.d.ts
+index 8574a5a..18bbfeb 100644
+--- a/node_modules/@react-three/drei/web/Html.d.ts
++++ b/node_modules/@react-three/drei/web/Html.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { Group, Object3D, Camera } from 'three';
+ import { Assign } from 'utility-types';
+ import { ReactThreeFiber } from '@react-three/fiber';
+diff --git a/node_modules/@react-three/drei/web/Html.js b/node_modules/@react-three/drei/web/Html.js
+index 7e878b4..9d59f11 100644
+--- a/node_modules/@react-three/drei/web/Html.js
++++ b/node_modules/@react-three/drei/web/Html.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import * as ReactDOM from 'react-dom/client';
+ import { Vector3, OrthographicCamera, PerspectiveCamera } from 'three';
+ import { useThree, useFrame } from '@react-three/fiber';
+diff --git a/node_modules/@react-three/drei/web/Loader.js b/node_modules/@react-three/drei/web/Loader.js
+index 5dc02d3..0353f74 100644
+--- a/node_modules/@react-three/drei/web/Loader.js
++++ b/node_modules/@react-three/drei/web/Loader.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { useProgress } from '../core/useProgress.js';
+ 
+ const defaultDataInterpolation = p => `Loading ${p.toFixed(2)}%`;
+diff --git a/node_modules/@react-three/drei/web/PresentationControls.d.ts b/node_modules/@react-three/drei/web/PresentationControls.d.ts
+index a5b92f8..64972b6 100644
+--- a/node_modules/@react-three/drei/web/PresentationControls.d.ts
++++ b/node_modules/@react-three/drei/web/PresentationControls.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ declare type Props = {
+     snap?: boolean;
+     global?: boolean;
+diff --git a/node_modules/@react-three/drei/web/PresentationControls.js b/node_modules/@react-three/drei/web/PresentationControls.js
+index e9d8d12..7bc52cc 100644
+--- a/node_modules/@react-three/drei/web/PresentationControls.js
++++ b/node_modules/@react-three/drei/web/PresentationControls.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import { MathUtils } from 'three';
+ import { useThree } from '@react-three/fiber';
+ import { useSpring, a } from '@react-spring/three';
+diff --git a/node_modules/@react-three/drei/web/ScrollControls.d.ts b/node_modules/@react-three/drei/web/ScrollControls.d.ts
+index 0683e60..a263be6 100644
+--- a/node_modules/@react-three/drei/web/ScrollControls.d.ts
++++ b/node_modules/@react-three/drei/web/ScrollControls.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ export declare type ScrollControlsProps = {
+     eps?: number;
+     horizontal?: boolean;
+diff --git a/node_modules/@react-three/drei/web/ScrollControls.js b/node_modules/@react-three/drei/web/ScrollControls.js
+index dc7d257..afcec4d 100644
+--- a/node_modules/@react-three/drei/web/ScrollControls.js
++++ b/node_modules/@react-three/drei/web/ScrollControls.js
+@@ -1,6 +1,6 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import * as ReactDOM from 'react-dom/client';
+ import { useThree, useFrame, context as context$1 } from '@react-three/fiber';
+ import mergeRefs from 'react-merge-refs';
+diff --git a/node_modules/@react-three/drei/web/Select.js b/node_modules/@react-three/drei/web/Select.js
+index 75a6282..c1e4908 100644
+--- a/node_modules/@react-three/drei/web/Select.js
++++ b/node_modules/@react-three/drei/web/Select.js
+@@ -1,5 +1,5 @@
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { SelectionBox } from 'three-stdlib';
+ import { useThree } from '@react-three/fiber';
+diff --git a/node_modules/@react-three/drei/web/View.d.ts b/node_modules/@react-three/drei/web/View.d.ts
+index 5852b6e..720dbe9 100644
+--- a/node_modules/@react-three/drei/web/View.d.ts
++++ b/node_modules/@react-three/drei/web/View.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { Size } from '@react-three/fiber';
+ export declare type ContainerProps = {
+diff --git a/node_modules/@react-three/drei/web/View.js b/node_modules/@react-three/drei/web/View.js
+index 9c1b405..0d8fd37 100644
+--- a/node_modules/@react-three/drei/web/View.js
++++ b/node_modules/@react-three/drei/web/View.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { useThree, createPortal, useFrame } from '@react-three/fiber';
+ 
+diff --git a/node_modules/@react-three/drei/web/useCursor.js b/node_modules/@react-three/drei/web/useCursor.js
+index dcd2d5c..16f306b 100644
+--- a/node_modules/@react-three/drei/web/useCursor.js
++++ b/node_modules/@react-three/drei/web/useCursor.js
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ 
+ function useCursor(hovered, onPointerOver = 'pointer', onPointerOut = 'auto') {
+   React.useEffect(() => {

@@ -1,0 +1,81 @@
+diff --git a/node_modules/@remix-run/react/components.d.ts b/node_modules/@remix-run/react/components.d.ts
+index 445be5b..a81626e 100644
+--- a/node_modules/@remix-run/react/components.d.ts
++++ b/node_modules/@remix-run/react/components.d.ts
+@@ -35,6 +35,9 @@ export declare function RemixEntry({ context: entryContext, action, location: hi
+     navigator: Navigator;
+     static?: boolean;
+ }): JSX.Element;
++
++interface RemixRouteContextType {}
++export declare const RemixRouteContext: React.Context<RemixRouteContextType | undefined>;
+ export declare function RemixRoute({ id }: {
+     id: string;
+ }): JSX.Element;
+@@ -286,3 +289,5 @@ export declare const LiveReload: (() => null) | (({ port, nonce, }: {
+      */
+     nonce?: string | undefined;
+ }) => JSX.Element);
++export declare function useRemixEntryContext(): RemixEntryContextType;
++export declare function useRemixRouteContext(): RemixRouteContextType;
+diff --git a/node_modules/@remix-run/react/components.js b/node_modules/@remix-run/react/components.js
+index 28d1949..fb1c001 100644
+--- a/node_modules/@remix-run/react/components.js
++++ b/node_modules/@remix-run/react/components.js
+@@ -1078,6 +1078,7 @@ exports.PrefetchPageLinks = PrefetchPageLinks;
+ exports.RemixEntry = RemixEntry;
+ exports.RemixEntryContext = RemixEntryContext;
+ exports.RemixRoute = RemixRoute;
++exports.RemixRouteContext = RemixRouteContext;
+ exports.Scripts = Scripts;
+ exports.composeEventHandlers = composeEventHandlers;
+ exports.useActionData = useActionData;
+diff --git a/node_modules/@remix-run/react/esm/components.js b/node_modules/@remix-run/react/esm/components.js
+index 2067219..029c5e9 100644
+--- a/node_modules/@remix-run/react/esm/components.js
++++ b/node_modules/@remix-run/react/esm/components.js
+@@ -1043,4 +1043,4 @@ const LiveReload = process.env.NODE_ENV !== "development" ? () => null : functio
+   });
+ };
+ 
+-export { Form, FormImpl, Link, Links, LiveReload, Meta, NavLink, PrefetchPageLinks, RemixEntry, RemixEntryContext, RemixRoute, Scripts, composeEventHandlers, useActionData, useBeforeUnload, useFetcher, useFetchers, useFormAction, useLoaderData, useMatches, useSubmit, useSubmitImpl, useTransition };
++export { Form, FormImpl, Link, Links, LiveReload, Meta, NavLink, PrefetchPageLinks, RemixEntry, RemixEntryContext, RemixRoute, RemixRouteContext, Scripts, composeEventHandlers, useActionData, useBeforeUnload, useFetcher, useFetchers, useFormAction, useLoaderData, useMatches, useSubmit, useSubmitImpl, useTransition };
+diff --git a/node_modules/@remix-run/react/esm/index.js b/node_modules/@remix-run/react/esm/index.js
+index 5c61f6d..9401488 100644
+--- a/node_modules/@remix-run/react/esm/index.js
++++ b/node_modules/@remix-run/react/esm/index.js
+@@ -10,7 +10,7 @@
+  */
+ export { RemixBrowser } from './browser.js';
+ export { Outlet, useHref, useLocation, useNavigate, useNavigationType, useOutlet, useOutletContext, useParams, useResolvedPath, useSearchParams } from 'react-router-dom';
+-export { Form, Link, Links, LiveReload, Meta, NavLink, PrefetchPageLinks, Scripts, useActionData, useBeforeUnload, useFetcher, useFetchers, useFormAction, useLoaderData, useMatches, useSubmit, useTransition } from './components.js';
++export { Form, Link, Links, LiveReload, Meta, NavLink, PrefetchPageLinks, Scripts, useActionData, useBeforeUnload, useFetcher, useFetchers, useFormAction, useLoaderData, useMatches, useSubmit, useTransition, RemixEntryContext, RemixRouteContext } from './components.js';
+ export { useCatch } from './errorBoundaries.js';
+ export { ScrollRestoration } from './scroll-restoration.js';
+ export { RemixServer } from './server.js';
+diff --git a/node_modules/@remix-run/react/index.d.ts b/node_modules/@remix-run/react/index.d.ts
+index 7d54156..555d17f 100644
+--- a/node_modules/@remix-run/react/index.d.ts
++++ b/node_modules/@remix-run/react/index.d.ts
+@@ -2,7 +2,7 @@ export type { RemixBrowserProps } from "./browser";
+ export { RemixBrowser } from "./browser";
+ export { useHref, useLocation, useNavigate, useNavigationType, useOutlet, useParams, useResolvedPath, useSearchParams, Outlet, useOutletContext, } from "react-router-dom";
+ export type { FormProps, SubmitOptions, SubmitFunction, RemixNavLinkProps as NavLinkProps, RemixLinkProps as LinkProps, } from "./components";
+-export { Meta, Links, Scripts, Link, NavLink, Form, PrefetchPageLinks, LiveReload, useFormAction, useSubmit, useTransition, useFetcher, useFetchers, useLoaderData, useActionData, useBeforeUnload, useMatches, } from "./components";
++export { Meta, Links, Scripts, Link, NavLink, Form, PrefetchPageLinks, LiveReload, useFormAction, useSubmit, useTransition, useFetcher, useFetchers, useLoaderData, useActionData, useBeforeUnload, useMatches, RemixEntryContext, RemixRouteContext } from "./components";
+ export type { FormMethod, FormEncType } from "./data";
+ export type { ThrownResponse } from "./errors";
+ export { useCatch } from "./errorBoundaries";
+diff --git a/node_modules/@remix-run/react/index.js b/node_modules/@remix-run/react/index.js
+index 8f0f55a..6945c0e 100644
+--- a/node_modules/@remix-run/react/index.js
++++ b/node_modules/@remix-run/react/index.js
+@@ -69,6 +69,8 @@ exports.LiveReload = components.LiveReload;
+ exports.Meta = components.Meta;
+ exports.NavLink = components.NavLink;
+ exports.PrefetchPageLinks = components.PrefetchPageLinks;
++exports.RemixEntryContext = components.RemixEntryContext;
++exports.RemixRouteContext = components.RemixRouteContext;
+ exports.Scripts = components.Scripts;
+ exports.useActionData = components.useActionData;
+ exports.useBeforeUnload = components.useBeforeUnload;

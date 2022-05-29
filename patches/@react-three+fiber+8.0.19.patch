@@ -1,0 +1,91 @@
+diff --git a/node_modules/@react-three/fiber/dist/declarations/src/core/index.d.ts b/node_modules/@react-three/fiber/dist/declarations/src/core/index.d.ts
+index 3fcf98e..3e67b50 100644
+--- a/node_modules/@react-three/fiber/dist/declarations/src/core/index.d.ts
++++ b/node_modules/@react-three/fiber/dist/declarations/src/core/index.d.ts
+@@ -1,6 +1,6 @@
+ /// <reference types="react-reconciler" />
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import { UseBoundStore } from 'zustand';
+ import * as ReactThreeFiber from '../three-types';
+ import { Renderer, context, RootState, Size, Dpr, Performance, PrivateKeys } from './store';
+diff --git a/node_modules/@react-three/fiber/dist/declarations/src/core/store.d.ts b/node_modules/@react-three/fiber/dist/declarations/src/core/store.d.ts
+index 603105c..9245ab7 100644
+--- a/node_modules/@react-three/fiber/dist/declarations/src/core/store.d.ts
++++ b/node_modules/@react-three/fiber/dist/declarations/src/core/store.d.ts
+@@ -1,5 +1,5 @@
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import { GetState, SetState, StoreApi, UseBoundStore } from 'zustand';
+ import { DomEvent, EventManager, PointerCaptureTarget, ThreeEvent } from './events';
+ import { Camera } from './utils';
+diff --git a/node_modules/@react-three/fiber/dist/declarations/src/core/utils.d.ts b/node_modules/@react-three/fiber/dist/declarations/src/core/utils.d.ts
+index e39fa9c..23b7409 100644
+--- a/node_modules/@react-three/fiber/dist/declarations/src/core/utils.d.ts
++++ b/node_modules/@react-three/fiber/dist/declarations/src/core/utils.d.ts
+@@ -1,5 +1,5 @@
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import { AttachType, Instance, InstanceProps, LocalState } from './renderer';
+ import { Dpr, RootState, Size } from './store';
+ export declare type Camera = THREE.OrthographicCamera | THREE.PerspectiveCamera;
+diff --git a/node_modules/@react-three/fiber/dist/declarations/src/native/Canvas.d.ts b/node_modules/@react-three/fiber/dist/declarations/src/native/Canvas.d.ts
+index 14a26ea..c9db081 100644
+--- a/node_modules/@react-three/fiber/dist/declarations/src/native/Canvas.d.ts
++++ b/node_modules/@react-three/fiber/dist/declarations/src/native/Canvas.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import { View, ViewProps, ViewStyle } from 'react-native';
+ import { RenderProps } from '../core';
+ export interface Props extends Omit<RenderProps<HTMLCanvasElement>, 'size' | 'dpr'>, ViewProps {
+diff --git a/node_modules/@react-three/fiber/dist/declarations/src/web/Canvas.d.ts b/node_modules/@react-three/fiber/dist/declarations/src/web/Canvas.d.ts
+index 2b9698b..f1f5555 100644
+--- a/node_modules/@react-three/fiber/dist/declarations/src/web/Canvas.d.ts
++++ b/node_modules/@react-three/fiber/dist/declarations/src/web/Canvas.d.ts
+@@ -1,4 +1,4 @@
+-import * as React from 'react';
++import React from 'react';
+ import type { Options as ResizeOptions } from 'react-use-measure';
+ import { RenderProps } from '../core';
+ export interface Props extends Omit<RenderProps<HTMLCanvasElement>, 'size'>, React.HTMLAttributes<HTMLDivElement> {
+diff --git a/node_modules/@react-three/fiber/dist/index-1e2a4313.esm.js b/node_modules/@react-three/fiber/dist/index-1e2a4313.esm.js
+index 43f08af..7b2997c 100644
+--- a/node_modules/@react-three/fiber/dist/index-1e2a4313.esm.js
++++ b/node_modules/@react-three/fiber/dist/index-1e2a4313.esm.js
+@@ -1,5 +1,5 @@
+ import * as THREE from 'three';
+-import * as React from 'react';
++import React from 'react';
+ import { DefaultEventPriority, ContinuousEventPriority, DiscreteEventPriority, ConcurrentRoot } from 'react-reconciler/constants';
+ import create from 'zustand';
+ import Reconciler from 'react-reconciler';
+diff --git a/node_modules/@react-three/fiber/dist/react-three-fiber.esm.js b/node_modules/@react-three/fiber/dist/react-three-fiber.esm.js
+index 9addf4b..7c54e54 100644
+--- a/node_modules/@react-three/fiber/dist/react-three-fiber.esm.js
++++ b/node_modules/@react-three/fiber/dist/react-three-fiber.esm.js
+@@ -1,7 +1,7 @@
+ import { c as createEvents, e as extend, u as useMutableCallback, a as createRoot, E as ErrorBoundary, B as Block, b as useIsomorphicLayoutEffect, d as unmountComponentAtNode } from './index-1e2a4313.esm.js';
+ export { t as ReactThreeFiber, s as _roots, q as act, n as addAfterEffect, m as addEffect, o as addTail, l as advance, i as applyProps, f as context, g as createPortal, a as createRoot, j as dispose, e as extend, p as getRootState, k as invalidate, h as reconciler, r as render, d as unmountComponentAtNode, x as useFrame, y as useGraph, z as useLoader, v as useStore, w as useThree } from './index-1e2a4313.esm.js';
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import useMeasure from 'react-use-measure';
+ import 'react-reconciler/constants';
+diff --git a/node_modules/@react-three/fiber/native/dist/react-three-fiber-native.esm.js b/node_modules/@react-three/fiber/native/dist/react-three-fiber-native.esm.js
+index f9da94b..c541885 100644
+--- a/node_modules/@react-three/fiber/native/dist/react-three-fiber-native.esm.js
++++ b/node_modules/@react-three/fiber/native/dist/react-three-fiber-native.esm.js
+@@ -1,7 +1,7 @@
+ import { c as createEvents, e as extend, u as useMutableCallback, a as createRoot, E as ErrorBoundary, B as Block, d as unmountComponentAtNode } from '../../dist/index-1e2a4313.esm.js';
+ export { t as ReactThreeFiber, s as _roots, q as act, n as addAfterEffect, m as addEffect, o as addTail, l as advance, i as applyProps, f as context, g as createPortal, a as createRoot, j as dispose, e as extend, p as getRootState, k as invalidate, h as reconciler, r as render, d as unmountComponentAtNode, x as useFrame, y as useGraph, z as useLoader, v as useStore, w as useThree } from '../../dist/index-1e2a4313.esm.js';
+ import _extends from '@babel/runtime/helpers/esm/extends';
+-import * as React from 'react';
++import React from 'react';
+ import * as THREE from 'three';
+ import { PixelRatio, View, StyleSheet } from 'react-native';
+ import { GLView } from 'expo-gl';
